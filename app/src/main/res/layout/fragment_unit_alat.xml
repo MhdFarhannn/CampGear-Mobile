@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+        <TextView android:id="@+id/unitAlatTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/content_gutter" android:layout_marginTop="@dimen/space_2" android:textAppearance="@style/TextAppearance.CampGear.TitleSmall" android:textColor="?attr/colorOnSurface" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/content_gutter" android:layout_marginTop="@dimen/space_1" android:text="@string/unit_screen_intro" android:textAppearance="@style/TextAppearance.CampGear.BodySmall" android:textColor="?attr/colorOnSurfaceVariant" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/content_gutter" android:layout_marginTop="@dimen/space_2" android:hint="@string/unit_search_hint" app:startIconDrawable="@drawable/ic_search" app:endIconMode="clear_text">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/inputUnitSearch" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <ProgressBar android:id="@+id/unitProgress" android:layout_width="@dimen/icon_small" android:layout_height="@dimen/icon_small" android:layout_gravity="center_horizontal" android:visibility="gone" />
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/list_gutter" android:scrollbars="none">
+            <com.google.android.material.chip.ChipGroup android:id="@+id/unitAvailabilityFilter" android:layout_width="wrap_content" android:layout_height="wrap_content" app:singleLine="true" app:singleSelection="true" app:selectionRequired="true">
+                <com.google.android.material.chip.Chip android:id="@+id/unitFilterAll" style="@style/Widget.CampGear.FilterChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/filter_all" />
+                <com.google.android.material.chip.Chip android:id="@+id/unitFilterAvailable" style="@style/Widget.CampGear.FilterChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/availability_tersedia" />
+                <com.google.android.material.chip.Chip android:id="@+id/unitFilterBorrowed" style="@style/Widget.CampGear.FilterChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/availability_dipinjam" />
+                <com.google.android.material.chip.Chip android:id="@+id/unitFilterUnavailable" style="@style/Widget.CampGear.FilterChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/availability_tidak_tersedia" />
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+        <com.app.campgear.ui.common.StateLayout android:id="@+id/stateLayout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipeRefresh" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerUnits" android:layout_width="match_parent" android:layout_height="match_parent" android:clipToPadding="false" android:paddingBottom="@dimen/fab_clearance" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            <ProgressBar android:id="@+id/paginationProgress" android:layout_width="@dimen/icon_small" android:layout_height="@dimen/icon_small" android:layout_gravity="bottom|center_horizontal" android:visibility="gone" />
+        </com.app.campgear.ui.common.StateLayout>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:id="@+id/buttonAddUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|end" android:layout_margin="@dimen/space_3" android:text="@string/units_add" app:icon="@drawable/ic_add" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

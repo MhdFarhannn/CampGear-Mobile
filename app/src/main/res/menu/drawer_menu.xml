@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home" android:title="@string/menu_home" android:icon="@drawable/ic_home" />
+        <item android:id="@+id/adminLoans" android:title="@string/menu_admin_loans" android:icon="@drawable/ic_loans" />
+        <item android:id="@+id/adminReturns" android:title="@string/menu_staff_returns" android:icon="@drawable/ic_returns" />
+        <item android:id="@+id/adminAlat" android:title="@string/menu_admin_alat" android:icon="@drawable/ic_gear" />
+        <item android:id="@+id/adminKategori" android:title="@string/menu_admin_kategori" android:icon="@drawable/ic_category" />
+        <item android:id="@+id/adminUsers" android:title="@string/menu_admin_users" android:icon="@drawable/ic_users" />
+        <item android:id="@+id/adminLog" android:title="@string/menu_admin_log" android:icon="@drawable/ic_log" />
+        <item android:id="@+id/staffRequests" android:title="@string/menu_staff_requests" android:icon="@drawable/ic_loans" />
+        <item android:id="@+id/staffMonitor" android:title="@string/menu_staff_monitor" android:icon="@drawable/ic_monitor" />
+        <item android:id="@+id/staffReturns" android:title="@string/menu_staff_returns" android:icon="@drawable/ic_returns" />
+        <item android:id="@+id/reports" android:title="@string/menu_reports" android:icon="@drawable/ic_report" />
+        <item android:id="@+id/profile" android:title="@string/menu_profile" android:icon="@drawable/ic_profile" />
+    </group>
+    <item android:id="@+id/actionLogout" android:title="@string/action_logout" android:icon="@drawable/ic_logout" />
+</menu>

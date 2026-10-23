@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stateOverlay" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background" android:clickable="true" android:focusable="true" tools:ignore="Overdraw">
+    <ProgressBar android:id="@+id/stateProgress" android:layout_width="@dimen/icon_medium" android:layout_height="@dimen/icon_medium"
+        android:layout_gravity="center" android:indeterminateTint="?attr/colorPrimary" android:contentDescription="@string/state_loading_description" android:visibility="gone" />
+    <LinearLayout android:id="@+id/stateEmpty" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_gravity="center" android:gravity="center" android:orientation="vertical" android:padding="@dimen/space_4" android:visibility="gone">
+        <ImageView android:layout_width="@dimen/icon_large" android:layout_height="@dimen/icon_large" android:padding="@dimen/space_2"
+            android:background="@drawable/bg_logo_circle" android:src="@drawable/ic_gear" android:contentDescription="@string/state_empty_title" app:tint="?attr/colorPrimary" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_3"
+            android:text="@string/state_empty_title" android:gravity="center" android:textAppearance="@style/TextAppearance.CampGear.TitleSmall" android:textColor="?attr/colorOnSurface" />
+        <TextView android:id="@+id/stateEmptyMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_1"
+            android:gravity="center" android:text="@string/state_empty" android:textAppearance="@style/TextAppearance.CampGear.Body" android:textColor="?attr/colorOnSurfaceVariant" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/stateEmptyAction" style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_3" android:text="@string/action_retry" android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/stateError" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_gravity="center" android:gravity="center" android:orientation="vertical" android:padding="@dimen/space_4" android:visibility="gone">
+        <ImageView android:layout_width="@dimen/icon_large" android:layout_height="@dimen/icon_large" android:padding="@dimen/space_2"
+            android:src="@drawable/ic_error" android:contentDescription="@string/state_error_title" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_2"
+            android:text="@string/state_error_title" android:gravity="center" android:textAppearance="@style/TextAppearance.CampGear.TitleSmall" android:textColor="?attr/colorOnSurface" />
+        <TextView android:id="@+id/stateErrorMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_1"
+            android:gravity="center" android:text="@string/state_error" android:textAppearance="@style/TextAppearance.CampGear.Body" android:textColor="?attr/colorOnSurfaceVariant" android:accessibilityLiveRegion="polite" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/stateRetry" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_3" android:text="@string/action_retry" />
+    </LinearLayout>
+</FrameLayout>

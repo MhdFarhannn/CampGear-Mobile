@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login">
+
+    <fragment android:id="@+id/home" android:name="com.app.campgear.ui.home.DashboardFragment" android:label="@string/menu_home" />
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.app.campgear.ui.auth.LoginFragment"
+        android:label="@string/menu_login" />
+
+    <fragment
+        android:id="@+id/catalog"
+        android:name="com.app.campgear.ui.peminjam.CatalogFragment"
+        android:label="@string/menu_catalog" />
+
+    <fragment
+        android:id="@+id/borrowForm"
+        android:name="com.app.campgear.ui.peminjam.BorrowFormFragment"
+        android:label="@string/menu_borrow_form" />
+
+    <fragment android:id="@+id/equipmentDetail" android:name="com.app.campgear.ui.peminjam.EquipmentDetailFragment" android:label="@string/equipment_detail_title">
+        <argument android:name="alatId" app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myLoans"
+        android:name="com.app.campgear.ui.peminjam.MyLoansFragment"
+        android:label="@string/menu_my_loans" />
+
+    <fragment
+        android:id="@+id/loanDetail"
+        android:name="com.app.campgear.ui.loan.LoanDetailFragment"
+        android:label="@string/menu_loan_detail">
+
+        <argument
+            android:name="loanId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/returnForm"
+        android:name="com.app.campgear.ui.loan.ReturnFormFragment"
+        android:label="@string/menu_return_form">
+
+        <argument
+            android:name="loanId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editLoan"
+        android:name="com.app.campgear.ui.admin.EditLoanFragment"
+        android:label="@string/menu_loan_edit">
+
+        <argument
+            android:name="loanId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/staffRequests"
+        android:name="com.app.campgear.ui.staff.StaffRequestsFragment"
+        android:label="@string/menu_staff_requests" />
+
+    <fragment
+        android:id="@+id/adminLoans"
+        android:name="com.app.campgear.ui.staff.StaffRequestsFragment"
+        android:label="@string/menu_admin_loans" />
+
+    <fragment
+        android:id="@+id/staffMonitor"
+        android:name="com.app.campgear.ui.staff.StaffMonitorFragment"
+        android:label="@string/menu_staff_monitor" />
+
+    <fragment
+        android:id="@+id/staffReturns"
+        android:name="com.app.campgear.ui.returns.ReturnsFragment"
+        android:label="@string/menu_staff_returns" />
+
+    <fragment
+        android:id="@+id/adminReturns"
+        android:name="com.app.campgear.ui.returns.ReturnsFragment"
+        android:label="@string/menu_staff_returns" />
+
+    <fragment
+        android:id="@+id/returnDetail"
+        android:name="com.app.campgear.ui.returns.ReturnDetailFragment"
+        android:label="@string/returns_detail_title">
+
+        <argument
+            android:name="returnId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reports"
+        android:name="com.app.campgear.ui.reports.ReportFragment"
+        android:label="@string/menu_reports" />
+
+    <fragment
+        android:id="@+id/adminAlat"
+        android:name="com.app.campgear.ui.admin.AlatManageFragment"
+        android:label="@string/menu_admin_alat" />
+
+    <fragment
+        android:id="@+id/alatForm"
+        android:name="com.app.campgear.ui.admin.AlatFormFragment"
+        android:label="@string/menu_admin_alat">
+
+        <argument
+            android:name="alatId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/unitAlat"
+        android:name="com.app.campgear.ui.admin.UnitAlatFragment"
+        android:label="@string/menu_units">
+
+        <argument
+            android:name="alatId"
+            app:argType="long" />
+
+        <argument
+            android:name="alatNama"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminKategori"
+        android:name="com.app.campgear.ui.admin.KategoriFragment"
+        android:label="@string/menu_admin_kategori" />
+
+    <fragment
+        android:id="@+id/adminUsers"
+        android:name="com.app.campgear.ui.admin.UsersFragment"
+        android:label="@string/menu_admin_users" />
+
+    <fragment
+        android:id="@+id/adminLog"
+        android:name="com.app.campgear.ui.admin.LogAktivitasFragment"
+        android:label="@string/menu_admin_log" />
+
+    <fragment android:id="@+id/masterForm" android:name="com.app.campgear.ui.admin.MasterFormFragment" android:label="@string/master_form_title">
+        <argument android:name="kind" app:argType="string" />
+        <argument android:name="entityId" app:argType="long" android:defaultValue="0L" />
+        <argument android:name="alatId" app:argType="long" android:defaultValue="0L" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.app.campgear.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile" />
+</navigation>

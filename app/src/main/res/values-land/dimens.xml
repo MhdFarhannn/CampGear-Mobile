@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hero_height">128dp</dimen>
+    <dimen name="detail_image_height">176dp</dimen>
+    <dimen name="picker_height">176dp</dimen>
+</resources>

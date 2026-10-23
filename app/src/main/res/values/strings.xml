@@ -1,0 +1,376 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">CampGear</string>
+
+    <string name="action_login">Masuk</string>
+    <string name="action_logout">Keluar</string>
+    <string name="action_save">Simpan</string>
+    <string name="action_cancel">Batal</string>
+    <string name="action_delete">Hapus</string>
+    <string name="action_edit">Ubah</string>
+    <string name="action_more">Pilihan lainnya</string>
+    <string name="action_logging_out">Keluar…</string>
+    <string name="action_retry">Coba lagi</string>
+    <string name="action_apply">Terapkan</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_share_csv">Bagikan CSV</string>
+    <string name="action_confirm">Ya</string>
+    <string name="action_open_menu">Buka menu</string>
+    <string name="action_manage_units">Kelola Unit</string>
+    <string name="action_pick_image">Pilih Gambar</string>
+
+    <string name="label_phone">Nomor Telepon</string>
+    <string name="label_password">Kata sandi</string>
+    <string name="label_address">Alamat</string>
+    <string name="label_gender">Jenis Kelamin</string>
+    <string name="label_joined">Anggota sejak</string>
+    <string name="label_category">Kategori</string>
+    <string name="label_price_per_day">Harga sewa per hari</string>
+    <string name="label_description">Deskripsi</string>
+    <string name="label_loan_date">Tanggal Peminjaman</string>
+    <string name="label_return_date">Tanggal Pengembalian</string>
+    <string name="label_return_date_actual">Tanggal Kembali</string>
+    <string name="label_total">Total Biaya</string>
+    <string name="label_estimated_total">Estimasi Total</string>
+    <string name="label_status">Status</string>
+    <string name="label_items">Rincian Alat</string>
+    <string name="label_unit_code">Kode Inventaris</string>
+    <string name="label_item_condition">Kondisi Unit</string>
+    <string name="label_availability">Status Ketersediaan</string>
+    <string name="label_item_status">Status Barang</string>
+    <string name="label_reject_note">Catatan Penolakan (opsional)</string>
+    <string name="label_date_from">Dari Tanggal</string>
+    <string name="label_date_to">Sampai Tanggal</string>
+    <string name="label_no_data">Tidak ada data</string>
+    <string name="label_image">Gambar</string>
+    <string name="label_units">Unit Alat</string>
+
+    <string name="login_title">Masuk ke CampGear</string>
+    <string name="login_subtitle">Masuk untuk menyiapkan perlengkapan dan mengelola perjalanan Anda.</string>
+    <string name="login_illustration_description">Tenda di antara pegunungan dan api unggun</string>
+    <string name="symbol_blank" translatable="false"> </string>
+    <string name="date_picker_title">Pilih tanggal</string>
+    <string name="action_pick_date">Pilih</string>
+    <string name="date_range_title">Pilih rentang tanggal</string>
+    <string name="login_error_empty">Nomor telepon dan password wajib diisi.</string>
+    <string name="login_footer">Gunakan akun yang terdaftar di CampGear.</string>
+
+    <string name="drawer_default_name">Pengguna CampGear</string>
+    <string name="drawer_default_role">Belum login</string>
+
+    <string name="menu_login">Login</string>
+    <string name="menu_home">Beranda</string>
+    <string name="home_greeting">Halo, %1$s</string>
+    <string name="home_overview_title">Ringkasan aktivitas</string>
+    <string name="home_admin_subtitle">Kelola perlengkapan dan operasional CampGear dalam satu tempat.</string>
+    <string name="home_staff_subtitle">Pantau pengajuan, serah terima, dan pengembalian hari ini.</string>
+    <string name="home_borrower_subtitle">Siapkan petualangan berikutnya dengan perlengkapan yang tepat.</string>
+    <string name="metric_equipment">Jenis alat</string>
+    <string name="metric_users">Pengguna</string>
+    <string name="metric_returns">Pengembalian</string>
+    <string name="metric_pending">Diajukan</string>
+    <string name="metric_approved">Disetujui</string>
+    <string name="metric_borrowed">Sedang dipinjam</string>
+    <string name="metric_overdue">Monitor terlambat</string>
+    <string name="metric_due">Monitor jatuh tempo</string>
+    <string name="metric_completed">Selesai</string>
+    <string name="dashboard_source">Ringkasan dari total data API. Monitor mencakup peminjaman disetujui dan dipinjam.</string>
+    <string name="menu_catalog">Katalog Alat</string>
+    <string name="bottom_catalog">Jelajah</string>
+    <string name="bottom_loans">Pinjaman</string>
+    <string name="menu_borrow_form">Ajukan Peminjaman</string>
+    <string name="menu_my_loans">Peminjaman Saya</string>
+    <string name="menu_loan_detail">Detail Peminjaman</string>
+    <string name="menu_return_form">Pengembalian</string>
+    <string name="menu_profile">Profil</string>
+    <string name="menu_staff_requests">Pengajuan</string>
+    <string name="menu_staff_monitor">Monitor</string>
+    <string name="menu_staff_returns">Riwayat Pengembalian</string>
+    <string name="menu_reports">Laporan</string>
+    <string name="menu_admin_loans">Peminjaman</string>
+    <string name="menu_admin_alat">Alat</string>
+    <string name="menu_admin_kategori">Kategori</string>
+    <string name="menu_admin_users">Pengguna</string>
+    <string name="menu_admin_log">Log Aktivitas</string>
+    <string name="menu_loan_edit">Edit Peminjaman</string>
+    <string name="menu_units">Unit Alat</string>
+
+    <string name="profile_logout_confirm">Keluar dari aplikasi?</string>
+    <string name="profile_information">Informasi akun</string>
+    <string name="profile_logout_confirm_message">Anda perlu login kembali untuk menggunakan aplikasi.</string>
+
+    <string name="catalog_search_hint">Cari nama alat</string>
+    <string name="catalog_headline">Perlengkapan untuk perjalanan Anda</string>
+    <string name="equipment_detail_title">Detail Alat</string>
+    <string name="equipment_borrow">Pinjam alat ini</string>
+    <string name="equipment_no_description">Deskripsi alat belum tersedia.</string>
+    <string name="equipment_image_description">Foto %1$s</string>
+    <string name="catalog_all_categories">Semua Kategori</string>
+    <string name="catalog_stock">Stok: %1$d</string>
+    <string name="catalog_no_stock">Stok habis</string>
+    <string name="catalog_add">Tambah</string>
+    <string name="catalog_added">%1$s ditambahkan ke keranjang.</string>
+    <string name="catalog_stock_limit">Jumlah melebihi stok tersedia.</string>
+    <string name="cart_updated">Harga atau stok telah berubah. Keranjang diperbarui; periksa estimasi terbaru.</string>
+    <string name="catalog_cart">Keranjang (%1$d)</string>
+    <string name="catalog_empty">Belum ada alat yang tersedia.</string>
+
+    <string name="borrow_title">Ajukan Peminjaman</string>
+    <string name="borrow_items_heading">1. Perlengkapan pilihan</string>
+    <string name="borrow_dates_heading">2. Tentukan jadwal</string>
+    <string name="borrow_empty">Keranjang masih kosong. Tambahkan alat dari katalog.</string>
+    <string name="borrow_submit">Ajukan Peminjaman</string>
+    <string name="borrow_estimate_hint">Estimasi dihitung dari harga sewa, jumlah, dan lama sewa (minimal 1 hari).</string>
+    <plurals name="borrow_days">
+        <item quantity="other">Lama sewa: %1$d hari</item>
+    </plurals>
+    <string name="borrow_error_items">Pilih minimal satu alat.</string>
+    <string name="borrow_error_dates">Tanggal peminjaman dan pengembalian wajib diisi.</string>
+    <string name="borrow_error_date_order">Tanggal pengembalian tidak boleh sebelum tanggal peminjaman.</string>
+    <string name="borrow_success">Pengajuan peminjaman berhasil dikirim.</string>
+    <string name="borrow_remove">Hapus item</string>
+    <string name="borrow_decrease">Kurangi jumlah</string>
+    <string name="borrow_increase">Tambah jumlah</string>
+
+    <string name="my_loans_empty">Belum ada peminjaman.</string>
+
+    <string name="loan_detail_empty">Peminjaman tidak ditemukan.</string>
+    <string name="loan_timeline_title">Alur peminjaman</string>
+    <string name="loan_detail_approve">Setujui</string>
+    <string name="loan_detail_reject">Tolak</string>
+    <string name="loan_detail_handover">Serahkan Alat</string>
+    <string name="loan_detail_return">Proses Pengembalian</string>
+    <string name="loan_detail_edit">Edit Peminjaman</string>
+    <string name="loan_detail_delete">Hapus Peminjaman</string>
+    <string name="loan_detail_delete_message">Data peminjaman dan rinciannya akan dihapus.</string>
+    <string name="loan_detail_approve_confirm">Setujui pengajuan ini?</string>
+    <string name="loan_detail_handover_confirm">Serahkan unit alat untuk peminjaman ini?</string>
+    <string name="loan_detail_approve_success">Peminjaman disetujui.</string>
+    <string name="loan_detail_reject_success">Peminjaman ditolak.</string>
+    <string name="loan_detail_handover_success">Alat berhasil diserahkan.</string>
+    <string name="loan_detail_delete_success">Peminjaman dihapus.</string>
+
+    <string name="return_title">Form Pengembalian</string>
+    <string name="return_info">Semua unit peminjaman harus dikembalikan. Pilih kondisi setiap unit.</string>
+    <string name="return_note_hint">Catatan pengembalian (opsional)</string>
+    <string name="return_submit">Kirim Pengembalian</string>
+    <string name="return_confirm">Pastikan tanggal dan kondisi seluruh unit sudah benar. Pengembalian yang tersimpan tidak dapat diubah melalui API.</string>
+    <string name="return_success">Pengembalian berhasil diproses.</string>
+    <string name="return_error_date">Tanggal kembali wajib diisi.</string>
+    <string name="return_error_date_order">Tanggal kembali tidak boleh sebelum tanggal peminjaman.</string>
+    <plurals name="return_estimate_late">
+        <item quantity="other">Terlambat %1$d hari · denda keterlambatan %2$s</item>
+    </plurals>
+    <string name="return_unit_missing">Data unit tidak tersedia. Peminjaman belum diserahkan.</string>
+    <string name="return_estimated_fine">Perkiraan denda</string>
+    <string name="return_estimate_notice">Nilai ini estimasi berdasarkan tarif konfigurasi backend yang diaudit. Denda final ditentukan server.</string>
+    <string name="fine_breakdown_title">Rincian denda dari server</string>
+    <string name="late_fine_value">Denda keterlambatan: %1$s</string>
+    <string name="return_unit_note_hint">Catatan unit (opsional)</string>
+    <string name="return_due_fmt">Jatuh tempo: %1$s</string>
+    <string name="return_on_time">Tidak ada keterlambatan.</string>
+    <string name="return_condition_fine_fmt">Denda kondisi: %1$s</string>
+    <string name="return_fine_detail">%1$s\n%2$s</string>
+
+    <string name="staff_requests_empty">Tidak ada pengajuan.</string>
+    <string name="monitor_empty">Tidak ada peminjaman aktif.</string>
+    <string name="monitor_intro">Pantau jadwal peminjaman yang disetujui dan sedang dipinjam.</string>
+    <string name="loan_list_intro">Pilih status untuk menelusuri peminjaman dan membuka rinciannya.</string>
+    <plurals name="monitor_late">
+        <item quantity="other">Terlambat %1$d hari</item>
+    </plurals>
+    <string name="monitor_on_time">Belum jatuh tempo</string>
+    <string name="monitor_due_today">Jatuh tempo hari ini</string>
+    <string name="monitor_filter_all">Semua Aktif</string>
+    <string name="monitor_filter_due">Jatuh Tempo</string>
+    <string name="monitor_filter_late">Terlambat</string>
+    <string name="returns_empty">Belum ada pengembalian.</string>
+    <string name="returns_detail_title">Detail Pengembalian</string>
+    <plurals name="return_late_days_fmt">
+        <item quantity="other">Terlambat: %1$d hari</item>
+    </plurals>
+    <string name="return_date_fmt">Tanggal kembali: %1$s</string>
+    <string name="return_total_fine_fmt">Total denda: %1$s</string>
+    <string name="return_unit_fine_fmt">Denda: %1$s</string>
+    <string name="return_note_fmt">Catatan: %1$s</string>
+
+    <string name="filter_all">Semua</string>
+    <string name="filter_date_range">Filter rentang tanggal</string>
+    <string name="filter_activity">Filter pengguna dan tanggal</string>
+
+    <string name="status_diajukan">Diajukan</string>
+    <string name="status_disetujui">Disetujui</string>
+    <string name="status_ditolak">Ditolak</string>
+    <string name="status_dipinjam">Dipinjam</string>
+    <string name="status_selesai">Selesai</string>
+
+    <string name="condition_baik">Baik</string>
+    <string name="condition_rusak_ringan">Rusak Ringan</string>
+    <string name="condition_rusak_berat">Rusak Berat</string>
+    <string name="condition_hilang">Hilang</string>
+
+    <string name="availability_tersedia">Tersedia</string>
+    <string name="availability_dipinjam">Dipinjam</string>
+    <string name="availability_tidak_tersedia">Tidak Tersedia</string>
+
+    <string name="gender_male">Laki-laki</string>
+    <string name="gender_female">Perempuan</string>
+
+    <string name="role_admin">Admin</string>
+    <string name="role_petugas">Petugas</string>
+    <string name="role_peminjam">Peminjam</string>
+
+    <string name="report_loans">Peminjaman</string>
+    <string name="report_returns">Pengembalian</string>
+    <string name="report_date_error">Tanggal awal dan akhir wajib diisi.</string>
+    <string name="report_date_order">Tanggal akhir tidak boleh sebelum tanggal awal.</string>
+    <string name="report_empty">Tidak ada data pada rentang tanggal tersebut.</string>
+    <string name="report_share_error">Gagal membuat file CSV.</string>
+    <string name="action_show_report">Tampilkan</string>
+    <string name="report_prompt">Pilih jenis laporan dan rentang tanggal, lalu tekan Tampilkan Laporan.</string>
+    <string name="report_period_fmt">Periode: %1$s – %2$s</string>
+    <string name="report_total_biaya_fmt">Total biaya: %1$s</string>
+    <string name="report_total_denda_fmt">Total denda: %1$s</string>
+    <string name="report_return_breakdown">Terlambat %1$s · Kondisi %2$s</string>
+    <plurals name="report_count_fmt">
+        <item quantity="other">%1$d entri</item>
+    </plurals>
+    <plurals name="item_count_fmt">
+        <item quantity="other">%1$d alat</item>
+    </plurals>
+
+    <string name="users_search_hint">Cari nama atau nomor telepon</string>
+    <string name="users_add">Tambah pengguna</string>
+    <string name="users_empty">Belum ada pengguna.</string>
+    <string name="users_edit_title">Ubah pengguna</string>
+    <string name="users_add_title">Tambah pengguna</string>
+    <string name="users_screen_intro">Atur akun dan hak akses pengguna CampGear.</string>
+    <string name="category_screen_intro">Kelompokkan perlengkapan agar mudah ditemukan.</string>
+    <string name="equipment_screen_intro">Kelola jenis alat, harga sewa, foto, dan unit fisik.</string>
+    <string name="unit_screen_intro">Kondisi dan ketersediaan setiap unit inventaris.</string>
+    <string name="category_search_hint">Cari kategori</string>
+    <string name="unit_search_hint">Cari kode di halaman yang dimuat</string>
+    <string name="search_empty">Tidak ada data yang cocok dengan pencarian.</string>
+    <string name="search_loaded_empty">Kode tidak ditemukan pada halaman yang sudah dimuat.</string>
+    <string name="load_more">Muat halaman berikutnya</string>
+    <string name="users_name_hint">Nama lengkap</string>
+    <string name="users_phone_hint">Nomor telepon</string>
+    <string name="users_address_hint">Alamat (opsional)</string>
+    <string name="users_role_hint">Hak akses</string>
+    <string name="users_gender_hint">Jenis kelamin (opsional)</string>
+    <string name="users_gender_none">Tidak diisi</string>
+    <string name="users_meta_fmt">%1$s • %2$s</string>
+    <string name="users_delete_confirm">Hapus pengguna ini?</string>
+    <string name="users_password_hint">Kata sandi baru (opsional)</string>
+    <string name="users_password_create_hint">Kata sandi</string>
+    <string name="users_deleted">Pengguna berhasil dihapus.</string>
+    <string name="account_updated_relogin">Akun Anda diperbarui. Silakan masuk kembali agar hak akses dan profil sesuai.</string>
+
+    <string name="kategori_add">Tambah Kategori</string>
+    <string name="kategori_empty">Belum ada kategori.</string>
+    <string name="kategori_add_title">Tambah Kategori</string>
+    <string name="kategori_edit_title">Ubah Kategori</string>
+    <string name="kategori_name_hint">Nama kategori</string>
+    <string name="kategori_delete_confirm">Hapus kategori ini?</string>
+    <string name="kategori_deleted">Kategori berhasil dihapus.</string>
+
+    <string name="alat_add">Tambah Alat</string>
+    <string name="alat_empty">Belum ada alat.</string>
+    <string name="alat_add_title">Tambah Alat</string>
+    <string name="alat_edit_title">Ubah Alat</string>
+    <string name="alat_name_hint">Nama alat</string>
+    <string name="alat_description_hint">Deskripsi alat (opsional)</string>
+    <string name="alat_image_selected">Gambar dipilih: %1$s</string>
+    <string name="alat_image_too_large">Ukuran gambar maksimal 2 MB.</string>
+    <string name="alat_image_invalid_type">Gambar harus berformat jpg, jpeg, png, atau webp.</string>
+    <string name="alat_image_read_error">Gambar tidak dapat dibaca. Pilih file lain atau coba lagi.</string>
+    <string name="alat_delete_confirm">Hapus alat ini?</string>
+    <string name="alat_validation_name">Nama alat wajib diisi, maksimal 150 karakter.</string>
+    <string name="alat_validation_category">Kategori wajib dipilih.</string>
+    <string name="alat_no_category">Buat kategori terlebih dahulu sebelum menambahkan alat.</string>
+    <string name="alat_validation_price">Masukkan harga tidak negatif dengan maksimal dua angka desimal dan 13 digit sebelum desimal.</string>
+    <string name="alat_price_per_day_value">%1$s / hari</string>
+    <string name="alat_saved">Alat berhasil disimpan.</string>
+    <string name="alat_deleted">Alat berhasil dihapus.</string>
+    <string name="alat_image_existing">Gambar saat ini sudah tersedia. Pilih gambar baru untuk mengganti.</string>
+    <string name="image_optional">Foto alat opsional. JPG, PNG, atau WebP, maksimal 2 MB.</string>
+    <string name="equipment_form_intro">Lengkapi informasi alat. Kelola unit fisiknya setelah data alat disimpan.</string>
+    <string name="master_form_intro">Isi data dengan benar. Perubahan disimpan setelah server mengonfirmasi.</string>
+    <string name="currency_prefix" translatable="false">Rp</string>
+
+    <string name="units_add">Tambah Unit</string>
+    <string name="units_empty">Belum ada unit alat.</string>
+    <string name="units_add_title">Tambah Unit Alat</string>
+    <string name="units_edit_title">Ubah Unit Alat</string>
+    <string name="units_code_hint" tools:ignore="TypographyDashes">Contoh: TND-DM4-004</string>
+    <string name="units_delete_confirm">Hapus unit ini?</string>
+    <string name="units_borrowed_locked">Unit yang sedang dipinjam tidak dapat diubah.</string>
+    <string name="unit_form_notice">Status dipinjam ditetapkan melalui serah terima peminjaman, bukan secara manual.</string>
+    <string name="reject_notice">Catatan penolakan masuk ke log aktivitas. Backend belum menampilkannya kembali kepada Peminjam.</string>
+    <string name="units_deleted">Unit alat berhasil dihapus.</string>
+    <string name="units_for_alat">Unit untuk %1$s</string>
+
+    <string name="log_empty">Belum ada aktivitas.</string>
+    <string name="log_filter_user">Pengguna</string>
+    <string name="log_filter_all_users">Semua Pengguna</string>
+    <string name="log_filter_from">Dari tanggal</string>
+    <string name="log_filter_to">Sampai tanggal</string>
+    <string name="log_clear_filter">Reset Filter</string>
+    <string name="log_date_order">Tanggal akhir tidak boleh sebelum tanggal awal.</string>
+    <string name="log_meta_fmt">%1$s • %2$s</string>
+    <string name="time_just_now">Baru saja</string>
+    <plurals name="time_minutes"><item quantity="other">%1$d menit lalu</item></plurals>
+    <plurals name="time_hours"><item quantity="other">%1$d jam lalu</item></plurals>
+    <plurals name="time_days"><item quantity="other">%1$d hari lalu</item></plurals>
+
+    <string name="edit_loan_title">Edit Peminjaman</string>
+    <string name="master_form_title">Form Data</string>
+    <string name="data_saved">Perubahan berhasil disimpan.</string>
+    <string name="delete_named">%1$s akan dihapus. Data dengan riwayat tidak dapat dihapus.</string>
+    <string name="validation_name_length">Nama wajib diisi, maksimal 100 karakter.</string>
+    <string name="validation_phone">Masukkan nomor telepon yang valid, maksimal 20 karakter.</string>
+    <string name="validation_password">Kata sandi wajib saat membuat akun, maksimal 100 karakter.</string>
+    <string name="validation_unit_code">Kode inventaris wajib diisi, maksimal 50 karakter.</string>
+    <string name="edit_loan_save">Simpan Perubahan</string>
+    <string name="edit_loan_add_item">Tambah alat ke peminjaman</string>
+    <string name="edit_loan_success">Peminjaman berhasil diubah.</string>
+    <string name="edit_loan_validation_date">Tanggal wajib diisi dan tanggal pengembalian tidak boleh lebih awal.</string>
+    <string name="edit_loan_validation_quantity">Jumlah setiap alat minimal 1.</string>
+
+    <string name="state_empty">Belum ada data.</string>
+    <string name="state_empty_title">Belum ada yang ditampilkan</string>
+    <string name="state_error_title">Ada kendala</string>
+    <string name="state_loading_description">Memuat data</string>
+    <string name="state_error">Terjadi kesalahan.</string>
+    <string name="state_no_connection">Tidak dapat terhubung ke server. Periksa koneksi dan pastikan backend berjalan.</string>
+    <string name="state_bad_response">Respons server tidak dapat dibaca.</string>
+    <string name="state_generic_error">Terjadi kesalahan. Silakan coba lagi.</string>
+    <string name="state_timeout">Server belum merespons. Silakan coba lagi.</string>
+    <string name="state_unauthorized">Sesi telah berakhir. Silakan masuk kembali.</string>
+    <string name="state_forbidden">Anda tidak memiliki akses ke halaman atau tindakan ini.</string>
+    <string name="state_not_found">Data tidak ditemukan. Muat ulang untuk mendapatkan data terbaru.</string>
+    <string name="state_server_error">Server mengalami kendala. Silakan coba lagi nanti.</string>
+    <string name="login_invalid_credentials">Nomor telepon atau kata sandi salah.</string>
+    <string name="error_phone_duplicate">Nomor telepon sudah terdaftar.</string>
+    <string name="error_category_duplicate">Nama kategori sudah digunakan.</string>
+    <string name="error_unit_duplicate">Kode inventaris sudah digunakan.</string>
+    <string name="error_delete_referenced">Data masih memiliki unit atau riwayat dan tidak dapat dihapus.</string>
+    <string name="error_stock_changed">Stok alat berubah dan tidak mencukupi. Periksa data terbaru sebelum serah terima.</string>
+    <string name="error_loan_state_changed">Status peminjaman telah berubah. Muat ulang sebelum melanjutkan.</string>
+
+    <string name="dialog_reject_title">Tolak Pengajuan</string>
+    <string name="dialog_return_detail_units">Unit yang dikembalikan</string>
+
+    <string name="symbol_dash" translatable="false">—</string>
+    <string name="symbol_minus" translatable="false">−</string>
+    <string name="symbol_plus" translatable="false">+</string>
+    <string name="quantity_fmt">%1$d x</string>
+    <string name="date_range_fmt">%1$s – %2$s</string>
+    <string name="loan_number">Peminjaman #%1$d</string>
+    <string name="return_number">Pengembalian #%1$d</string>
+    <string name="loan_peminjam_fmt">Peminjam: %1$s</string>
+    <string name="loan_petugas_fmt">Petugas: %1$s</string>
+    <string name="loan_total_fmt">Total: %1$s</string>
+    <string name="unit_code_fmt">Kode: %1$s</string>
+    <string name="unit_codes_fmt">Unit: %1$s</string>
+    <string name="phone_value">Telp. %1$s</string>
+</resources>

@@ -1,0 +1,2 @@
+# DTO Gson memakai refleksi; nama field harus tetap sesuai kontrak JSON.
+-keep class com.app.campgear.data.** { *; }

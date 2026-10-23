@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none" android:paddingHorizontal="@dimen/list_gutter">
+        <com.google.android.material.chip.ChipGroup android:id="@+id/chipGroupReport" android:layout_width="wrap_content" android:layout_height="wrap_content" app:singleSelection="true" app:singleLine="true" app:selectionRequired="true">
+            <com.google.android.material.chip.Chip android:id="@+id/chipReportLoans" style="@style/Widget.CampGear.FilterChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/report_loans" />
+            <com.google.android.material.chip.Chip android:id="@+id/chipReportReturns" style="@style/Widget.CampGear.FilterChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_returns" />
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/content_gutter" android:layout_marginBottom="@dimen/space_1" android:orientation="horizontal" android:baselineAligned="false">
+        <com.google.android.material.button.MaterialButton android:id="@+id/buttonReportRange" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:icon="@drawable/ic_calendar" android:text="@string/date_range_title" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/buttonLoadReport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_1" android:text="@string/action_show_report" />
+    </LinearLayout>
+    <com.app.campgear.ui.common.StateLayout android:id="@+id/stateLayout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/content_gutter">
+                <com.google.android.material.card.MaterialCardView style="@style/Widget.CampGear.Card" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?attr/colorPrimaryContainer" app:strokeWidth="0dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                        <TextView android:id="@+id/reportSummaryTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.CampGear.LabelLarge" android:textColor="?attr/colorOnPrimaryContainer" />
+                        <TextView android:id="@+id/reportSummaryTotal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_1" android:textAppearance="@style/TextAppearance.CampGear.Title" android:textColor="?attr/colorOnPrimaryContainer" />
+                        <TextView android:id="@+id/reportSummaryPeriod" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_2" android:textAppearance="@style/TextAppearance.CampGear.BodySmall" android:textColor="?attr/colorOnPrimaryContainer" />
+                        <TextView android:id="@+id/reportSummaryCount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_1" android:textAppearance="@style/TextAppearance.CampGear.BodySmall" android:textColor="?attr/colorOnPrimaryContainer" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <TextView android:id="@+id/reportEmpty" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_3" android:text="@string/report_empty" android:textAppearance="@style/TextAppearance.CampGear.Body" android:textColor="?attr/colorOnSurfaceVariant" android:visibility="gone" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerReportLoans" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" android:layout_marginTop="@dimen/space_2" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerReportReturns" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" android:layout_marginTop="@dimen/space_2" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.app.campgear.ui.common.StateLayout>
+    <TextView android:id="@+id/textShareError" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/content_gutter" android:textAppearance="@style/TextAppearance.CampGear.BodySmall" android:textColor="?attr/colorError" android:visibility="gone" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/content_gutter" android:layout_marginVertical="@dimen/space_2">
+        <com.google.android.material.button.MaterialButton android:id="@+id/buttonShareCsv" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_share_csv" app:icon="@drawable/ic_report" />
+        <ProgressBar android:id="@+id/shareProgress" android:layout_width="@dimen/icon_small" android:layout_height="@dimen/icon_small" android:layout_gravity="center" android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.campgear.ui.common.StateLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/stateLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/content_gutter">
+            <com.google.android.material.card.MaterialCardView style="@style/Widget.CampGear.Card" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?attr/colorPrimaryContainer" app:strokeWidth="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:padding="@dimen/space_2">
+                    <ImageView android:layout_width="@dimen/icon_large" android:layout_height="@dimen/icon_large" android:padding="@dimen/space_2" android:src="@drawable/ic_profile" android:background="@drawable/bg_logo_circle" android:contentDescription="@string/menu_profile" app:tint="?attr/colorOnPrimaryContainer" />
+                    <TextView android:id="@+id/profileName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_2" android:gravity="center" android:textAppearance="@style/TextAppearance.CampGear.Title" android:textColor="?attr/colorOnPrimaryContainer" />
+                    <TextView android:id="@+id/profileRole" style="@style/Widget.CampGear.Status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_1" android:textColor="?attr/colorOnPrimaryContainer" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" android:text="@string/profile_information" android:textAppearance="@style/TextAppearance.CampGear.TitleSmall" android:textColor="?attr/colorOnSurface" />
+            <com.google.android.material.card.MaterialCardView style="@style/Widget.CampGear.Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_2">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_phone" android:textAppearance="@style/TextAppearance.CampGear.Label" android:textColor="?attr/colorOnSurfaceVariant" />
+                    <TextView android:id="@+id/profilePhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_1" android:textAppearance="@style/TextAppearance.CampGear.Body" android:textColor="?attr/colorOnSurface" />
+                    <View android:layout_width="match_parent" android:layout_height="@dimen/stroke_thin" android:layout_marginVertical="@dimen/space_2" android:background="?attr/colorOutlineVariant" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_address" android:textAppearance="@style/TextAppearance.CampGear.Label" android:textColor="?attr/colorOnSurfaceVariant" />
+                    <TextView android:id="@+id/profileAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_1" android:textAppearance="@style/TextAppearance.CampGear.Body" android:textColor="?attr/colorOnSurface" />
+                    <View android:layout_width="match_parent" android:layout_height="@dimen/stroke_thin" android:layout_marginVertical="@dimen/space_2" android:background="?attr/colorOutlineVariant" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_gender" android:textAppearance="@style/TextAppearance.CampGear.Label" android:textColor="?attr/colorOnSurfaceVariant" />
+                    <TextView android:id="@+id/profileGender" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_1" android:textAppearance="@style/TextAppearance.CampGear.Body" android:textColor="?attr/colorOnSurface" />
+                    <View android:layout_width="match_parent" android:layout_height="@dimen/stroke_thin" android:layout_marginVertical="@dimen/space_2" android:background="?attr/colorOutlineVariant" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_joined" android:textAppearance="@style/TextAppearance.CampGear.Label" android:textColor="?attr/colorOnSurfaceVariant" />
+                    <TextView android:id="@+id/profileJoined" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_1" android:textAppearance="@style/TextAppearance.CampGear.Body" android:textColor="?attr/colorOnSurface" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.button.MaterialButton android:id="@+id/buttonLogout" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_4" android:text="@string/action_logout" android:textColor="?attr/colorError" app:strokeColor="?attr/colorError" app:icon="@drawable/ic_logout" app:iconTint="?attr/colorError" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.app.campgear.ui.common.StateLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <com.google.android.material.button.MaterialButton android:id="@+id/buttonToggleLogFilter" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/content_gutter" android:layout_marginTop="@dimen/space_2" android:text="@string/filter_activity" app:icon="@drawable/ic_search" />
+    <LinearLayout android:id="@+id/logFilterPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingHorizontal="@dimen/content_gutter" android:paddingVertical="@dimen/space_2" android:visibility="gone">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilLogUser" style="@style/Widget.CampGear.Dropdown" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/log_filter_user">
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView android:id="@+id/inputLogUser" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false" android:layout_marginTop="@dimen/space_2">
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilLogFrom" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/space_1" android:hint="@string/log_filter_from">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/inputLogFrom" android:layout_width="match_parent" android:layout_height="wrap_content" android:clickable="true" android:focusable="true" android:cursorVisible="false" android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilLogTo" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="@string/log_filter_to">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/inputLogTo" android:layout_width="match_parent" android:layout_height="wrap_content" android:clickable="true" android:focusable="true" android:cursorVisible="false" android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="@dimen/space_1">
+            <com.google.android.material.button.MaterialButton android:id="@+id/buttonApplyLogFilter" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/action_apply" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/buttonResetLogFilter" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/space_1" android:text="@string/log_clear_filter" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.app.campgear.ui.common.StateLayout android:id="@+id/stateLayout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipeRefresh" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerLog" android:layout_width="match_parent" android:layout_height="match_parent" android:clipToPadding="false" android:paddingBottom="@dimen/space_3" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </com.app.campgear.ui.common.StateLayout>
+    <ProgressBar android:id="@+id/paginationProgress" android:layout_width="@dimen/icon_small" android:layout_height="@dimen/icon_small" android:layout_gravity="center_horizontal" android:visibility="gone" />
+</LinearLayout>

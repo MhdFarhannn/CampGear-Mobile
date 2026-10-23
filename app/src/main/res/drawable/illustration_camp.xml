@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="180dp" android:height="112dp" android:viewportWidth="360" android:viewportHeight="224">
+    <path android:fillColor="@color/brand_forest" android:pathData="M0,0H360V224H0Z" />
+    <path android:fillColor="@color/brand_sun" android:pathData="M280,38a23,23 0,1 0,0 46a23,23 0,1 0,0 -46" />
+    <path android:fillColor="@color/brand_forest_light" android:pathData="M-20,172L79,50L151,142L205,75L315,183L380,117V224H0Z" />
+    <path android:fillColor="@color/brand_cream" android:pathData="M58,76L79,50L99,76L84,72L79,64L72,76Z" />
+    <path android:fillColor="@color/brand_sand" android:pathData="M92,193L166,98L239,193Z" />
+    <path android:fillColor="@color/brand_cream" android:pathData="M92,193L166,98V193Z" />
+    <path android:fillColor="@color/brand_forest" android:pathData="M137,193L166,137L193,193Z" />
+    <path android:fillColor="@color/brand_forest" android:pathData="M38,201V117L11,155H26L6,181H38ZM312,207V103L289,141H301L280,172H303V207Z" />
+    <path android:fillColor="@color/brand_sun" android:pathData="M263,197C244,184 258,170 263,164C269,177 283,183 263,197Z" />
+    <path android:fillColor="@color/brand_cream" android:pathData="M263,196C255,190 260,180 263,177C266,183 271,189 263,196Z" />
+    <path android:fillColor="@color/brand_sand" android:pathData="M246,201H279V204H246Z" />
+</vector>

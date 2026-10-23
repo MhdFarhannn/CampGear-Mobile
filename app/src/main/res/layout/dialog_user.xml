@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingHorizontal="@dimen/content_gutter" android:paddingTop="@dimen/space_3" android:paddingBottom="@dimen/space_2">
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilUserName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/users_name_hint">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/inputUserName" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapWords" android:maxLines="1" android:maxLength="100" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilUserPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_2" android:hint="@string/users_phone_hint">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/inputUserPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="phone" android:maxLines="1" android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilUserRole" style="@style/Widget.CampGear.Dropdown" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_2" android:hint="@string/users_role_hint">
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView android:id="@+id/dropdownUserRole" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilUserGender" style="@style/Widget.CampGear.Dropdown" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_2" android:hint="@string/users_gender_hint">
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView android:id="@+id/dropdownUserGender" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilUserAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_2" android:hint="@string/users_address_hint">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/inputUserAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:minLines="2" android:maxLines="4" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/tilUserPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_2" android:hint="@string/users_password_hint" app:endIconMode="password_toggle">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/inputUserPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" android:maxLines="1" android:maxLength="100" android:saveEnabled="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

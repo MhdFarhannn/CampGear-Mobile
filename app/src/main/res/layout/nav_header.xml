@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+    android:background="?attr/colorPrimaryContainer" android:padding="@dimen/space_3" tools:ignore="Overdraw">
+    <ImageView android:layout_width="@dimen/icon_large" android:layout_height="@dimen/icon_large"
+        android:src="@drawable/ic_launcher_foreground" android:background="@drawable/bg_logo_circle" android:contentDescription="@string/app_name" />
+    <TextView android:id="@+id/navUserName" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_2" android:textAppearance="@style/TextAppearance.CampGear.TitleSmall" android:textColor="?attr/colorOnPrimaryContainer" />
+    <TextView android:id="@+id/navUserRole" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_1" android:textAppearance="@style/TextAppearance.CampGear.LabelLarge" android:textColor="?attr/colorOnPrimaryContainer" />
+</LinearLayout>
